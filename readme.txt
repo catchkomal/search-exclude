@@ -1,5 +1,5 @@
 === Search Exclude ===
-Contributors: yourname
+Contributors: Komal Bhatt
 Tags: search, exclude, posts, pages, custom post types
 Requires at least: 5.5
 Tested up to: 6.7
