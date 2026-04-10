@@ -17,6 +17,9 @@ Perfect for:
 - Removing outdated posts from search
 - Controlling search visibility without deleting content
 
+== Short Description ==
+Exclude selected content from Algolia search index safely.
+
 == Features ==
 - Exclude posts and pages from Algolia indexing
 - Support for custom post types
