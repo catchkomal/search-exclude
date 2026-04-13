@@ -50,7 +50,7 @@ https://www.algolia.com/policies/privacy/
 - No coding required
 
 == Installation ==
-1. Upload the plugin files to the `/wp-content/plugins/algolia-search-exclude` directory, or install via the WordPress plugins screen.
+1. Upload the plugin files to the `/wp-content/plugins/komal889-content-exclusion-for-algolia` directory, or install via the WordPress plugins screen.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Configure settings from the admin panel.
 4. Start excluding content from Algolia search.
