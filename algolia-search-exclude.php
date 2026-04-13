@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Algolia Search Exclude
+ * Plugin Name: Komal889 Content Exclusion for Algolia
  * Plugin URI:  https://github.com/catchkomal/search-exclude
  * Description: Exclude pages, posts, and CPTs from WordPress search AND remove them from your Algolia index entirely.
- * Version:     2.0.0
+ * Version:     2.0.1
  * Author:      Komal Bhatt
  * License:     GPL-2.0+
  * Text Domain: algolia-search-exclude
