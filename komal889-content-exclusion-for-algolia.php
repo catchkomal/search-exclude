@@ -6,7 +6,7 @@
  * Version:     2.0.1
  * Author:      Komal Bhatt
  * License:     GPL-2.0+
- * Text Domain: algolia-search-exclude
+ * Text Domain: komal889-content-exclusion-for-algolia-main
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -153,8 +153,8 @@ function se_exclude_from_search( WP_Query $query ) {
 add_action( 'admin_menu', 'se_register_menu' );
 function se_register_menu() {
     add_options_page(
-        __( 'Search Exclude', 'algolia-search-exclude' ),
-        __( 'Search Exclude', 'algolia-search-exclude' ),
+        __( 'Search Exclude', 'komal889-content-exclusion-for-algolia-main' ),
+        __( 'Search Exclude', 'komal889-content-exclusion-for-algolia-main' ),
         'manage_options',
         'search-exclude',
         'se_render_admin_page'
@@ -320,7 +320,10 @@ function se_save_settings() {
     
     // Post IDs — diff to find newly excluded
     $old_ids = array_filter( array_map( 'intval', (array) get_option( 'se_excluded_ids', [] ) ) );
-    $ids_raw = sanitize_text_field( wp_unslash($_POST['se_excluded_ids']) ?? '' );
+    $ids_raw = '';
+	if ( isset( $_POST['se_excluded_ids'] ) ) {
+	    $ids_raw = sanitize_text_field( wp_unslash( $_POST['se_excluded_ids'] ) );
+	}
     $new_ids = array_values( array_filter( array_map( 'intval', explode( ',', $ids_raw ) ) ) );
     update_option( 'se_excluded_ids', $new_ids );
 
